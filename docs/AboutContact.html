@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Title and Favicon go here-->
+    <title>AchievementLog</title>
+    <link rel="stylesheet" href="/CSS/stylesheet.css">
+    <link rel="icon" href="/ImgandVid/achievementlog-high-resolution-logo-transparent.png" alt="Logo" width="150" height="50">
+  </head>
+  <body>
+
+    <!-- Wrapper for site -->
+    <div id="container">
+
+  
+    <!-- This will be the header 
+         Click brings you to Index/Homepage-->
+    <header id ="titlecontainer">
+      <!--Allows you to click on the header and be brought back to homepage-->
+      <h1 id="title"><a href="/Index.html"> AchievementLog</a></h1>
+    </header>
+
+  
+
+    <!--Navigation Link 
+        use W2Schools for Dropdown Navbar-->
+    <!--Links to games-->
+    <div class="navbar"> <!-- Name of the container-->
+      <div class="dropdown">
+        <button class="dropbtn">Games
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="/docs/StardewValley.html">SDV</a>
+          <a href="/docs/Minecraft.html">MC</a>
+          <a href="/docs/Littlewood.html">LD</a>
+         </div>
+        </div>
+      <a href="/docs/AboutContact.html">About</a>
+      <a href="/docs/FAQ.html">FAQ</a>
+      <a href="/docs/AboutContact.html#Contact" onclick="scrollIntoView()"> Contact</a>
+    </div>
+
+      <main>
+
+        <div id="img">
+          <img src="/ImgandVid/SDV Meme.jpg" alt="SDV Meme">
+          <img src="/ImgandVid/jojo vs comu.jpg" alt="jojo vs commu">
+        </div>
+        <article class="AboutMe">
+          <h4>About Me</h4><br>
+          <p>
+            AchievementLog is a work in progress platform that is dedicated for gamers of all ages to keep track of their in-game achievements.
+            It allows you to see what items or steps you would need to take to progress in your game. <br><br>
+            I hope to one day to improve AchievementLog to its highest potential so it could help casual and completionists to keep track of their progress in a organised way so they could see how far they've come.
+            I chose these three games as they're games that I and my friends usually play where we try to keep track of. 
+            This is usually by having a notebook, printed out paper from helpful websites and a whiteboard so I found myself wishing that there was a way to make it easier and ta-dah AchievementLog was born!
+            <br><br>
+            My original wireframe for this website hasn't gone to plan as it would involve a lot of JavaScript and features that I haven't learned to implement.
+            I'm hoping in the future to implement these plans to make this website a better place for all.
+            Seeing as this is my first website I can't wait to see what's in store for the future and I hope you enjoy it to.
+            <br><br><br>
+            <h3 id="welcome">WELCOME TO ACHIEVEMENT LOG!</h3>
+          </p>
+        </article>
+      </main>
+
+
+
+
+      <div class="contact" id="contact">
+        <h4>Contact Me</h4>
+        <p>If you have any feedback or comments contact me  from one of the below:</p>
+       <a href="mailto:katrinamakovoza18@gmail.com" target="_blank">katrinamakovoza18@gmail.com</a><br>
+        <a href="https://bsky.app/profile/kmakovoza.bsky.social" target="_blank">BlueSky</a><br>
+        <a href="https://github.com/KatrinaMakovoza" target="_blank">GitHub</a><br>
+      </div>
+
+
+ 
+
+        <!--Footer-->
+        <div class="footer">
+          <div class="footer-logo">
+              <img src="/ImgandVid/achievementlog-high-resolution-logo-transparent.png" alt="Logo" width="150" height="50">
+          </div>
+            <a href="/docs/FAQ.html">FAQ</a>
+            <a href="/docs/AboutContact.html">  About</a>
+            <a href="/docs/AboutContact.html#contact" onclick="scrollIntoView()">Contact</a>
+            <a href="/docs/Index.html">Home</a>
+          
+              <p>&copy; 2024 AchievementLog</p>
+          </div>
+    </div>
+    <script src="../script.js"  defer></script>
+</body>
+</html>

@@ -1,0 +1,336 @@
+/* Reset Style */
+* {
+  margin: 0;
+  box-sizing:border-box;
+  padding: 0;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+/*  Structure of website    */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: transparent;
+  color: 333333;
+  font-family: Arial, sans-serief;
+}
+
+/*H3 Style */
+h3 {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 5px;
+  /* Maybe put a background colour to make it stand out*/
+}
+.wrapper{
+  transition: margin-left 0.3s;
+}
+
+/*Header Style*/
+#titlecontainer {
+  align-items: center;
+  justify-content: center;
+  margin: 0cm auto;
+  background:linear-gradient(#3Cb371, #8B4513, #ADD8E6);
+}
+#title {
+  font-size: 80px;
+  color: #FFD700;
+  text-align: center;
+  padding: 2%;
+}
+
+/* Header Link Style*/
+#title a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/*Nav Buttons*/
+#openNav{
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  border: none;
+  color: #ffffff;
+  background-color: transparent;
+ font-size: 40px;
+ width: 60px;
+}
+
+#closeNav{
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  border: none;
+  color: #ffffff;
+  background-color: transparent;
+ font-size: 35px;
+ width: 60px;
+}
+/*Navigation Section */
+/* Sidebar Style */
+
+.navBar {
+  position: fixed;
+  top:0; /*Dont remove keeps ithe bar at the  top */
+  left: 0;
+  padding: 0;
+  width: 200px;
+  height: 100%;
+  background-image: linear-gradient(#87CEEb, #FF7F50);
+  border: 5px inset #6a3093;
+  }
+
+  
+/* Styling of content in sidebar*/
+/*Links and dropdown button */
+.navBar a, .dropdown-btn {
+  padding: 10px 10px 10px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #000000;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  margin-top: 40%;
+}
+
+/*Dropdown btn  and navbar links on hover and focus */
+.dropdown-btn:hover,
+.navBar a:hover {
+  background-color:#87ceeb; /* Change the colour later*/
+}
+
+/* Dropdown container */
+.dropdown-container {
+  display: none;
+  margin-left: 5px;
+  
+}
+
+.dropdown:hover .dropdown-container {
+  display: block;
+}
+.dropdown-container a {
+  display: block;
+  padding: 1px 1px 1px 1px;
+  text-decoration: none;
+  color: #000000;
+  font-size: 15px;
+  margin: 40px;
+}
+
+.dropdown-container a:hover {
+  background-color: pink;
+}
+/* Optional: Style the caret down icon */
+.fa-caret-right {
+  float: right;
+  margin-left: 10px;
+}
+
+.dropdown:hover .fa-caret-right{
+  transform: rotate(90deg); /* should rotate 90deg*/
+}
+  
+
+/*----------------------------------------------------------------------------------------------------------------------------------- */
+/* This is the disclaimer style*/
+.disclaimer {
+  display: flex;
+  align-content: center;
+  padding: 10px 40px;
+  border-style: 2px solid, #7e6a3d;
+  background-color: #f4d99a;
+  color: #5c4a37;
+}
+
+/*-----------------------------------------------------------------------SDV MAIN AREA---------------------------------------------------------*/
+.container{
+display: flex;
+flex-direction: row;
+gap: 50px;
+transition: margin-left 0.3 ease;
+background-color: #b6d7ab;
+}
+
+/* Achievement Area */
+/* Container*/
+.ToA, .bundles, .specitems, .bpowers {
+  background: #d7e4b5;
+  border-radius: 8px;
+  padding: 15px;
+  max-height: 1000px;
+  max-width: 400px;
+  overflow-y: auto; /* Text Dissapeared will add or try to add a scroll bar to see if I just need to scroll to see it*/
+  margin-top: 15px;
+  margin-left: 3px;
+}
+
+
+/*General Settings */
+/*Scroll bar  OH SHIT IT WORKS*/
+::-webkit-scrollbar {
+  width: 50px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #d3cda6;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #C29c6d;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #8e6f3d;
+}
+
+/*ach-list*/
+/* Rests the style*/
+.ach-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ach-row {
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-radius: 20px;
+}
+
+.ach-list li {
+  display: block;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 10px;
+  margin-bottom: 3%;
+  background-color: #a2d0a1;
+  width: 95%;
+  text-align: left;
+  border-radius: 4px;
+  color: #3c2f2a;
+}
+
+/*Checkbox style */
+input#checkboxAch {
+  display: flex;
+  margin-left: 0px;
+  transform: scale(1.25);
+  margin-bottom: 7px;
+  accent-color: #7a6c3d; /*Changes the box colour when ticked. Change it later to a better style */
+}
+/*----------------------------------------------------------------------MINECRAFT--------------------------------------------------------------------------------------------------------*/
+.mccontainer{
+  display: flex;
+  flex-direction: row;
+  transition: margin-left 0.3 ease;
+  background: linear-gradient(#228B22, #C2B280, #2f4f4f);
+  justify-content: space-between;
+  }
+
+.mChecklist, .ToAMC{
+  border: solid 4px #6D4C41;
+  background-color: #FF7043;
+  padding: 20px;
+  width: 400px;
+  height: 1000px;
+  overflow-x: auto;
+  margin-right: 150px;
+  margin-left: 150px;
+  margin-top: 20px;
+}
+
+.mChecklist li, .ToAMC li{
+  background-color: #D32F2F;
+  width:auto;
+  color: white;
+  margin-bottom: 10px;
+  padding: 20px 20px 20px 20px;
+}
+
+.bestwebsites{
+height: 800px;
+  border: 2px dotted black;
+  width: fit-content;
+  margin: 20px 0;
+  background-color: #0082a7;
+}
+
+.bestwebsites li{
+  padding: 20px;
+  list-style: none;
+}
+/*-----------------------------------------------------------------------LITTLEWOOD------------------------------------------------------------------------------------------------------*/
+.lwcontainer{
+  display: flex;
+  flex-direction: row;
+  transition: margin-left 0.3s ease;
+  background: linear-gradient(#a8d5ba, #e5d7b9);
+  justify-content: space-between;
+  }
+
+  .ToLW{
+    border: solid 4px #a1887f;
+    border-radius: 8px;
+    background-color: #f6b6a1;
+    padding: 20px;
+    width: 800px;
+    height: 1000px;
+    overflow-x: auto;
+    margin: 20px 150px ;
+  }
+  
+  .ToLW li{
+    background-color: #f8b6b6;
+    width:auto;
+    color: black;
+    margin-bottom: 10px;
+    padding: 20px 20px 20px 20px;
+  }
+
+  .lwbestwebsites{
+    height: 800px;
+    border: 2px dotted #A1887F;
+    border-radius: 8px;
+    width: 750px;
+    margin: 20px 100px;
+    background-color: #a1c6e7;
+  }
+
+  .lwbestwebsites li{ 
+    list-style: none; 
+    text-align: center;
+    padding-top: 50px;}
+/*----------------------------------------------------------------------FOOTER--------------------------------------------------------------------------------------------------------*/
+
+/* Footer Style*/
+/*Footer Container */
+.footer {
+  display: flex;
+  margin-top: auto;
+  align-content: end;
+  border: 2px solid black;
+  height: 110px;
+  width: 100%;
+  padding: 2.4%;
+  gap: 250px;
+  background-color: #d8c6b8;
+}
+/* Footer Links*/
+.footer a {
+  font-size: 16px;
+  color: #000000;
+  text-decoration: none;
+  
+}
+
+/*Soruces::
+  Coding Nepal - side bar menu
+  W3Schools - side bar menu  */
+

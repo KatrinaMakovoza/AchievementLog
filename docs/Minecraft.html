@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Title and Favicon go here-->
+    <title>AchievementLog</title>
+    <link rel="stylesheet" href="/CSS/Games.css">
+    <link rel="icon" href="/ImgandVid/achievementlog-high-resolution-logo-transparent.png" alt="Logo" width="150" height="50">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />"
+  </head>
+  <body id="lol">
+
+    <!-- Wrapper for site -->
+    <div id="container">
+
+  
+<!-- This will be the header 
+  Click brings you to Index/Homepage-->
+  <div class="wrapper">
+    <header id ="titlecontainer">
+    <!--Allows you to click on the header and be brought back to homepage-->
+      <h1 id="title"><a href="/Index.html"> AchievementLog</a></h1>
+    </header>
+
+  
+
+  <!-- Navigation Section-->
+  <button id="openNav" onclick="openSidebar()"><i class="fa fa-bars"></i></button>
+  <div class="navBar"> <!--Wrapper for everything for sidebar-->
+    <a href="/Index.html">Home</a>
+    <div class="dropdown"> <!--Wrapper for button-->
+      <button class="dropdown-btn">
+        Games 
+        <i class="fas fa-caret-right"></i> 
+      </button>
+      <div id="myDropdown" class="dropdown-container"> <!--Wrapper for the links in button-->
+          <a href="/docs/StardewValley.html">Stardew Valley</a>
+          <a href="/docs/Minecraft.html">Minecraft</a>
+          <a href="/docs/Littlewood.html">LittleWood</a>
+        </div>
+    </div>
+  <!--Wrapper for everything deals with this-->
+    <a href="/docs/AboutContact.html">About</a>
+    <a href="/docs/FAQ.html">FAQ</a>
+    <a href="/docs/AboutContact.html#Contact" onclick="scrollIntoView()"> Contact</a>
+    <button  id=closeNav onclick="closeSidebar()"><i class="fa fa-times"></i></button>
+</div>
+
+          <!--Put a discalimer here-->
+    <div class="disclaimer">
+      <p id="discalimer">
+        This website is a unoffical fan website. It has no relation to any of the games here persented. 
+        It was made by a student for their coding class.
+      </p>
+    </div>
+
+    <!--Main Content Area e.g Achievement, Checklist etc-->
+    <div class="mccontainer">
+      <!--Achievement Section-->
+      <div class="ToAMC">
+        <h3>Achievements</h3><br><br>
+        <div class="mc-ach-row">
+          <ul class="mc-ach-list" >
+          <li><input type="checkbox" id="checkboxAch"><strong> Taking Inventory: </strong> Open the inventory <span class="descrption"><br></span></li>
+          <li><input type="checkbox" id="checkboxAch"><strong> Getting Wood: </strong> Get Wood  <span class="descrption"> <br></span></li>
+          <li><input type="checkbox" id="checkboxAch"><strong>  Benchmarking:</strong> Get Workbench  <span class="descrption"> <br></span></li>
+          <li><input type="checkbox" id="checkboxAch"><strong> Time to Mine!: </strong> Create a pickaxe  <span class="descrption"> <br></span></li>
+          <li><input type="checkbox" id="checkboxAch"><strong> Hot Topic: </strong> Create a Furnace  <span class="descrption"> <br></span></li>
+          <li><input type="checkbox" id="checkboxAch"><strong> Acquire Hardware: </strong> Smelt Iron ingot to get Iron Bar<span class="descrption"> <br> </span></li>
+          <li><input type="checkbox" id="checkboxAch"><strong> Time to Farm!:</strong> Get Bread <span class="descrption"> <br> </span></li>
+          <li><input type="checkbox" id="checkboxAch"><strong> Bake bread: </strong> Get Cake  <span class="descrption"> <br></span></li>
+          <li><input type="checkbox" id="checkboxAch"><strong> Getting an upgrade: </strong> Get Stone Pickaxe <span class="descrption">  <br></span></li>
+          <li><input type="checkbox" id="checkboxAch"><strong> When Pigs Fly: </strong> Drop down with a pig with 5 or more distance while riding it<span class="descrption">  <br></span></li>
+          <li><input type="checkbox" id="checkboxAch"><strong> Monster Hunter:</strong> Kill a mob <span class="descrption"> <br> </span></li>
+          <li><input type="checkbox" id="checkboxAch"><strong> Cow Tipper:</strong>  <span class="descrption"> Get some leather <br></span></li>
+          <li><input type="checkbox" id="checkboxAch"><strong> Delicious Fish: </strong> Fish and Cook  <span class="descrption"> <br> </span></li>
+          <li><input type="checkbox" id="checkboxAch"><strong> On a Rail: </strong> Travel 1km in a straightline from where you started<span class="descrption">  <br></span></li>
+          <li><input type="checkbox" id="checkboxAch"><strong> Sniper Duel:</strong> From 50m kill a skeleton with a bow <span class="descrption"> <br> </span></li>
+          <li><input type="checkbox" id="checkboxAch"><strong> DIAMONDS!: </strong> Get Diamonds<span class="descrption">  <br></span></li>
+          <li><input type="checkbox" id="checkboxAch"><strong> We need to go Deeper: </strong> Go to the Nether<span class="descrption">  <br></span></li>
+          <li><input type="checkbox" id="checkboxAch"><strong> Return to Sender: </strong> Kill a ghast by firing back its fireball <span class="descrption">  <br></span></li>
+          <li><input type="checkbox" id="checkboxAch"><strong> Into a Fire: </strong> Get a blaze rod from the ground <span class="descrption">  <br></span></li>
+          <li><input type="checkbox" id="checkboxAch"><strong> Local Bewery: </strong> Make a potion <span class="descrption">  <br></span></li>
+          <li><input type="checkbox" id="checkboxAch"><strong> Librarian: </strong> Build a Library for better enchantments <span class="descrption">  <br></span></li>
+          <li><input type="checkbox" id="checkboxAch"><strong> Adventuring Time: </strong> Explore all the biomes  <span class="descrption"><br></highlight> in SDV</span></li>
+          <li><input type="checkbox" id="checkboxAch"><strong> The Beginning?: </strong> Spawn the Wither  <span class="descrption"> <br></span></li>
+          <li><input type="checkbox" id="checkboxAch"><strong> The Beginning:</strong> Kill the Wither  <span class="descrption"> <br></span></li>
+          <li><input type="checkbox" id="checkboxAch"><strong> Free the End: </strong> Kill Ender Dragon and Leave <span class="descrption">  <br></span></li>
+          <li><input type="checkbox" id="checkboxAch"><strong> Enchanter: </strong> <span class="descrption"> <br></span></li>
+          <li><input type="checkbox" id="checkboxAch"><strong> Overkill:</strong> 9 damage to any mob  <span class="descrption"> <br></span></li>
+          <li><input type="checkbox" id="checkboxAch"><strong> Repopulation:</strong> Breed two same spieces of cows <span class="descrption"><br>.</span></li>
+          <li><input type="checkbox" id="checkboxAch"><strong> Overpowered:</strong> Craft or Eat a Encahnted Golden apple  <span class="descrption"><br> </span></li>
+          <li><input type="checkbox" id="checkboxAch"><strong> Beaconator:</strong> Create a Beacon <span class="descrption"><br></span></li>
+          <li><input type="checkbox" id="checkboxAch"><strong> Diamonds to you!:</strong> Have a mob or player pick up a diamond ater you drop it  <span class="descrption"><br></span></li>
+          </ul>
+        </div> <!--End Row-->
+      </div> <!--End ToAMC-->
+
+      <div class="mChecklist">
+        <h3>Checklist</h3>
+        <div class="ach-row">
+          <ul class="mc-ach-list">
+            <strong>Easy</strong><br>
+            <span class="descrption">
+              <br><li><input type="checkbox" id="checkboxAch">Gather wood and stone</li>
+              <br><li><input type="checkbox" id="checkboxAch">Build wooden sword, pickaxe and axe </li>
+              <br><li><input type="checkbox" id="checkboxAch">Build a Chest</li>
+              <br><li><input type="checkbox" id="checkboxAch">Gather Stone </li>
+              <br><li><input type="checkbox" id="checkboxAch">Upgrade equipment</li>
+              <br><li><input type="checkbox" id="checkboxAch">Gather more wood and build a house</li>
+              <br><li><input type="checkbox" id="checkboxAch">Gather wool and food</li>
+              <br><li><input type="checkbox" id="checkboxAch">Build a Furance</li>
+              <br><li><input type="checkbox" id="checkboxAch">Gather Iron Ingots</li>
+              <br><li><input type="checkbox" id="checkboxAch">Upgrade equipment </li>
+              <br><li><input type="checkbox" id="checkboxAch">Design iron or leather clothes</li>
+              <br><li><input type="checkbox" id="checkboxAch">Start making a Wheat Farm</li>
+              <br><li><input type="checkbox" id="checkboxAch">Kill Skeletons and other mobs</li>
+              <br><li><input type="checkbox" id="checkboxAch">Start Exploring cave deeper to reach diamond level</li>
+              <br><li><input type="checkbox" id="checkboxAch">Ensure you have a reliable amount of resources and equipment</li>
+              <br><li><input type="checkbox" id="checkboxAch">Tame a wolf if possible</li>
+              <br><li><input type="checkbox" id="checkboxAch">Find a village and build a checkpoint house there</li>
+            </span>
+
+              <strong>Medium</strong>
+              <span class="descrption">
+                <br><li><input type="checkbox" id="checkboxAch">Expand og House and Turn it into Stone</li>
+                <br><li><input type="checkbox" id="checkboxAch">Explore closer biomes to see if theres any more villagers to trade with</li>
+                <br><li><input type="checkbox" id="checkboxAch">Find Diamonds</li>
+                <br><li><input type="checkbox" id="checkboxAch">Keep Finding Diamonds till you can upgrade to diamond suite and diamond sword and pickaxe </li>
+                <br><li><input type="checkbox" id="checkboxAch"> Find resources to build a library</li>
+                <br><li><input type="checkbox" id="checkboxAch"> Mine Obsidian to make an Enchantment table</li>
+                <br><li><input type="checkbox" id="checkboxAch">Build a nether portal - This can be done earlier </li>
+                <br><li><input type="checkbox" id="checkboxAch">Gather blaze rods and explore</li>
+                <br><li><input type="checkbox" id="checkboxAch">Go back and build a potion stand and make some potions e.g regeneration, speed etc </li>
+                <br><li><input type="checkbox" id="checkboxAch">Kill mobs to gain xp points to upgrade equipment with enchantment table</li>
+              </span>
+
+              <strong>Hard</strong>
+              <span class="descrption">
+                <br><li><input type="checkbox" id="checkboxAch">Kill Endermen</li>
+                <br><li><input type="checkbox" id="checkboxAch">Get Enough Eye of Ender </li>
+                <br><li><input type="checkbox" id="checkboxAch">Enter the portal</li>
+                <br><li><input type="checkbox" id="checkboxAch">Kill the Enderdragon</li>
+                <br><li><input type="checkbox" id="checkboxAch">Keep expanding your world</li>
+              </span>
+
+            <li><input type="checkbox" id="checkboxAch">
+              <strong>Hardest</strong>
+              <br><li><input type="checkbox" id="checkboxAch"> Get Soul Blocks and place in a T shape</li>
+              <br><li><input type="checkbox" id="checkboxAch">Defeat the Wither </li>
+              <br><li><input type="checkbox" id="checkboxAch">Build statues of yourself</li>
+              <br><li><input type="checkbox" id="checkboxAch">Complete Achievements</li>
+            </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+            <!--Just links for help music, building houses etc-->
+            <div class="bestwebsites">
+              <h2>Links for Help</h2>
+              <ul>
+                <li><iframe width="330" height="130" src="https://www.youtube.com/embed/ANkxRGvl1VY?si=x40Is34bdn0XpmLb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></li>
+                <li><iframe width="330" height="130" src="https://www.youtube.com/embed/gWC2Oqeyl04?si=z9ROB7SW8ImXDpUq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></li>
+                <!--You can add more links here  just change the embeeded sizes-->
+
+            </div>
+
+
+
+
+
+
+
+
+            
+      </div>
+    </div>
+  </div>
+      <!--Footer-->
+      <div class="footer">
+        <div class="footer-logo">
+          <img src="/ImgandVid/achievementlog-high-resolution-logo-transparent.png" alt="Logo" width="150" height="50">        </div>
+          <a href="/docs/FAQ.html">FAQ</a>
+          <a href="/docs/AboutContact.html">  About</a>
+          <a href="/docs/AboutContact.html#contact" onclick="scrollIntoView()">Contact</a>
+          <a href="/docs/Index.html">Home</a>
+        
+            <p>&copy; 2024 AchievementLog</p>
+        </div>
+  </div>
+  <script src="../script.js"></script>
+</body>
+</html>
+            

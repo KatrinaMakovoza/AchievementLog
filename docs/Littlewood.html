@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Title and Favicon go here-->
+    <title>AchievementLog</title>
+    <link rel="stylesheet" href="/CSS/Games.css">
+    <link rel="icon" href="/ImgandVid/achievementlog-high-resolution-logo-transparent.png" alt="Logo" width="150" height="50">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />"
+    <script src="../script.js"></script>
+  </head>
+  <body>
+
+<!-- This will be the header 
+  Click brings you to Index/Homepage-->
+  <div class="wrapper">
+    <header id ="titlecontainer">
+    <!--Allows you to click on the header and be brought back to homepage-->
+      <h1 id="title"><a href="/Index.html"> AchievementLog</a></h1>
+    </header>
+
+      <!-- Navigation Section-->
+  <button id="openNav" onclick="openSidebar()"><i class="fa fa-bars"></i></button>
+  <div class="navBar"> <!--Wrapper for everything for sidebar-->
+    <a href="/Index.html">Home</a>
+    <div class="dropdown"> <!--Wrapper for button-->
+      <button class="dropdown-btn">
+        Games 
+        <i class="fas fa-caret-right"></i> 
+      </button>
+      <div id="myDropdown" class="dropdown-container"> <!--Wrapper for the links in button-->
+          <a href="/docs/StardewValley.html">Stardew Valley</a>
+          <a href="/docs/Minecraft.html">Minecraft</a>
+          <a href="/docs/Littlewood.html">LittleWood</a>
+        </div>
+    </div>
+  <!--Wrapper for everything deals with this-->
+    <a href="/docs/AboutContact.html">About</a>
+    <a href="/docs/FAQ.html">FAQ</a>
+    <a href="/docs/AboutContact.html#Contact" onclick="scrollIntoView()"> Contact</a>
+    <button  id=closeNav onclick="closeSidebar()"><i class="fa fa-times"></i></button>
+</div>
+
+          <!--Put a discalimer here-->
+          <div class="disclaimer">
+            <p id="discalimer">
+              This website is a unoffical fan website. It has no relation to any of the games here persented. 
+              It was made by a student for their coding class.
+            </p>
+          </div>
+      
+          <!--Main Content Area e.g Achievement, Checklist etc-->
+          <div class="lwcontainer">
+            <!--Achievement Section-->
+            <div class="ToLW">
+              <h3>Achievements</h3><br><br>
+              <div class="lw-ach-row">
+                <ul class="lw-ach-list" >
+                <li><input type="checkbox" id="checkboxAch"><strong> Adept Gatherer: </strong> Gather 100 items <span class="descrption"><br></span></li>
+                <li><input type="checkbox" id="checkboxAch"><strong> Heroic Gatherer: </strong> Gather 500 items <span class="descrption"><br></span></li>
+                <li><input type="checkbox" id="checkboxAch"><strong> Master Gatherer: </strong> Gather 1000 items <span class="descrption"><br></span></li>
+                <li><input type="checkbox" id="checkboxAch"><strong> Grandmaster Gatherer: </strong> Gather 2500 items <span class="descrption"><br></span></li>
+                <li><input type="checkbox" id="checkboxAch"><strong> Prodigy Gatherer: </strong> Gather 4000 items <span class="descrption"><br></span></li>
+                <li><input type="checkbox" id="checkboxAch"><strong> Adept Miner: </strong> Mine 150 Ores  <span class="descrption"> <br></span></li>
+                <li><input type="checkbox" id="checkboxAch"><strong> Heroic Miner: </strong> Mine 750 Ores  <span class="descrption"> <br></span></li>
+                <li><input type="checkbox" id="checkboxAch"><strong> Master Miner: </strong> Mine 1500 Ores  <span class="descrption"> <br></span></li>
+                <li><input type="checkbox" id="checkboxAch"><strong> Grandmaster Miner: </strong> Mine 3500 Ores  <span class="descrption"> <br></span></li>
+                <li><input type="checkbox" id="checkboxAch"><strong> Prodigy Miner: </strong> Mine 6000 Ores  <span class="descrption"> <br></span></li>
+                <li><input type="checkbox" id="checkboxAch"><strong>  Adept Woodcutter:</strong> Chop 150 Trees  <span class="descrption"> <br></span></li>
+                <li><input type="checkbox" id="checkboxAch"><strong>  Heroic Woodcutter:</strong> Chop 750 Trees  <span class="descrption"> <br></span></li>
+                <li><input type="checkbox" id="checkboxAch"><strong>  Master Woodcutter:</strong> Chop 1500 Trees  <span class="descrption"> <br></span></li>
+                <li><input type="checkbox" id="checkboxAch"><strong>  Grandmaster Woodcutter:</strong> Chop 3500 Trees  <span class="descrption"> <br></span></li>
+                <li><input type="checkbox" id="checkboxAch"><strong>  Prodigy Woodcutter:</strong> Chop 6000 Trees  <span class="descrption"> <br></span></li>
+                <li><input type="checkbox" id="checkboxAch"><strong> Adept Bug Catcher: </strong> Catch 100 bugs  <span class="descrption"> <br></span></li>
+                <li><input type="checkbox" id="checkboxAch"><strong> Heroic Bug Catcher: </strong> Catch 250 bugs  <span class="descrption"> <br></span></li>
+                <li><input type="checkbox" id="checkboxAch"><strong> Master Bug Catcher: </strong> Catch 500 bugs  <span class="descrption"> <br></span></li>
+                <li><input type="checkbox" id="checkboxAch"><strong> Grandmaster Bug Catcher: </strong> Catch 1000 bugs  <span class="descrption"> <br></span></li>
+                <li><input type="checkbox" id="checkboxAch"><strong> Prodigy Bug Catcher: </strong> Catch 2500 bugs  <span class="descrption"> <br></span></li>
+                <li><input type="checkbox" id="checkboxAch"><strong> Adept Fisherman: </strong> Catch 100 fish  <span class="descrption"> <br></span></li>
+                <li><input type="checkbox" id="checkboxAch"><strong> Heroic Fisherman: </strong> Catch 250 fish  <span class="descrption"> <br></span></li>
+                <li><input type="checkbox" id="checkboxAch"><strong> Master Fisherman: </strong> Catch 500 fish  <span class="descrption"> <br></span></li>
+                <li><input type="checkbox" id="checkboxAch"><strong> Grandmaster Fisherman: </strong> Catch 1000 fish  <span class="descrption"> <br></span></li>
+                <li><input type="checkbox" id="checkboxAch"><strong> Prodigy Fisherman: </strong> Catch 2500 fish <span class="descrption"> <br></span></li>
+                <li><input type="checkbox" id="checkboxAch"><strong> Adept Farmer: </strong> Harvest 100 crops<span class="descrption"> <br> </span></li>
+                <li><input type="checkbox" id="checkboxAch"><strong> Heroic Farmer: </strong> Harvest 500 crops<span class="descrption"> <br> </span></li>
+                <li><input type="checkbox" id="checkboxAch"><strong> Master Farmer: </strong> Harvest 1000 crops<span class="descrption"> <br> </span></li>
+                <li><input type="checkbox" id="checkboxAch"><strong> Grandmaster Farmer: </strong> Harvest 2500 crops<span class="descrption"> <br> </span></li>
+                <li><input type="checkbox" id="checkboxAch"><strong> Prodigy Farmer: </strong> Harvest 4000 crops<span class="descrption"> <br> </span></li>
+                <li><input type="checkbox" id="checkboxAch"><strong> Adept Crafter:</strong> Craft 100 items <span class="descrption"> <br> </span></li>
+                <li><input type="checkbox" id="checkboxAch"><strong> Heroic Crafter:</strong> Craft 250 items <span class="descrption"> <br> </span></li>
+                <li><input type="checkbox" id="checkboxAch"><strong> Master Crafter:</strong> Craft 500 items <span class="descrption"> <br> </span></li>
+                <li><input type="checkbox" id="checkboxAch"><strong> Grandmaster Crafter:</strong> Craft 1000 items <span class="descrption"> <br> </span></li>
+                <li><input type="checkbox" id="checkboxAch"><strong> Prodigy Crafter:</strong> Craft 2500 items<span class="descrption"> <br> </span></li>
+                <li><input type="checkbox" id="checkboxAch"><strong> Adept Merchant: </strong> Sell 50 items <span class="descrption"> <br></span></li>
+                <li><input type="checkbox" id="checkboxAch"><strong> Heroic Merchant: </strong> Sell 100 items   <span class="descrption"> <br></span></li>
+                <li><input type="checkbox" id="checkboxAch"><strong> Master Merchant: </strong> Sell 300 items <span class="descrption"> <br></span></li>
+                <li><input type="checkbox" id="checkboxAch"><strong> Grandmaster Merchant: </strong> Sell 700 items   <span class="descrption"> <br></span></li>
+                <li><input type="checkbox" id="checkboxAch"><strong> Prodgy Merchant: </strong> Sell 1500 items  <span class="descrption"> <br></span></li>
+                <li><input type="checkbox" id="checkboxAch"><strong> Adept Quester: </strong> Complete 10 requests <span class="descrption">  <br></span></li>
+                <li><input type="checkbox" id="checkboxAch"><strong> Heroic Quester: </strong> Complete 25 requests <span class="descrption">  <br></span></li>
+                <li><input type="checkbox" id="checkboxAch"><strong> Master Quester: </strong> Complete 50 requests <span class="descrption">  <br></span></li>
+                <li><input type="checkbox" id="checkboxAch"><strong> Grandmaster Quester: </strong> Complete 100 requests <span class="descrption">  <br></span></li>
+                <li><input type="checkbox" id="checkboxAch"><strong> Prodigy Quester: </strong> Complete 150 requests<span class="descrption">  <br></span></li>
+                <li><input type="checkbox" id="checkboxAch"><strong> Adept Friend Maker: </strong> Meet 3 Townsfolk<span class="descrption">  <br></span></li>
+                <li><input type="checkbox" id="checkboxAch"><strong> Heroic Friend Maker: </strong> Meet 5 Townsfolk<span class="descrption">  <br></span></li>
+                <li><input type="checkbox" id="checkboxAch"><strong> Master Friend Maker: </strong> Meet 10 Townsfolk<span class="descrption">  <br></span></li>
+                <li><input type="checkbox" id="checkboxAch"><strong> Grandmaster Friend Maker: </strong> Meet 12 Townsfolk<span class="descrption">  <br></span></li>
+                <li><input type="checkbox" id="checkboxAch"><strong> Prodigy Friend Maker: </strong> Meet 15 Townsfolk<span class="descrption">  <br></span></li>
+                <li><input type="checkbox" id="checkboxAch"><strong> A Lovely Wedding:</strong> Married <span class="descrption"> <br> </span></li>
+                <li><input type="checkbox" id="checkboxAch"><strong> Pet Lover:</strong>  <span class="descrption"> Adopt a pet <br></span></li>
+                <li><input type="checkbox" id="checkboxAch"><strong> Goal Completionist: </strong> Complete all personal goals <span class="descrption"> <br> </span></li>
+                <li><input type="checkbox" id="checkboxAch"><strong> Master Chef: </strong> Discover all Tavern Recipes<span class="descrption">  <br></span></li>
+                <li><input type="checkbox" id="checkboxAch"><strong> The Edge:</strong> Visit the Edge of Solemn <span class="descrption"> <br> </span></li>
+                <li><input type="checkbox" id="checkboxAch"><strong> So it is Written:</strong> Unlock all town wishes <span class="descrption"> <br> </span></li>
+                <li><input type="checkbox" id="checkboxAch"><strong> Tarott Collector: </strong> Find all Tarott Monster Cards<span class="descrption">  <br></span></li>
+                <li><input type="checkbox" id="checkboxAch"><strong> DewDrop Upgrader: </strong> Upgrade all strctures and areas to 10 starts<span class="descrption">  <br></span></li>
+                <li><input type="checkbox" id="checkboxAch"><strong> Ultimate Upgrader: </strong> Unlock all ultimate upgrades at the Crafting Workshop <span class="descrption">  <br></span></li>
+                <li><input type="checkbox" id="checkboxAch"><strong> A perfect Museum: </strong> Donate all items to Museum <span class="descrption">  <br></span></li>
+                </ul>
+              </div> <!--End Row-->
+            </div> <!--End ToAMC-->
+      
+
+                  <!--Just links for help music, building houses etc-->
+                  <div class="lwbestwebsites">
+                    <h2 style="text-align: center;" >Links for Help</h2>
+                    <ul>
+                      <li><iframe width="350" height="315" src="https://www.youtube.com/embed/jsPg3Jgh7b0?si=hRq3lq7ctXwnJGDU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></li>
+                      <li><iframe width="350" height="315" src="https://www.youtube.com/embed/xsr651LelMI?si=vQ7J7DHKW_nH2S_J" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></li>
+                      <!--You can add more links here  just change the embeeded sizes-->
+                      </ul>
+                  </div>
+            </div>
+          </div>
+        </div>
+            <!--Footer-->
+            <div class="footer">
+              <div class="footer-logo">
+                <img src="/ImgandVid/achievementlog-high-resolution-logo-transparent.png" alt="Logo" width="150" height="50">        </div>
+                <a href="/docs/FAQ.html">FAQ</a>
+                <a href="/docs/AboutContact.html">  About</a>
+                <a href="/docs/AboutContact.html#contact" onclick="scrollIntoView()">Contact</a>
+                <a href="/docs/Index.html">Home</a>
+              
+                  <p>&copy; 2024 AchievementLog</p>
+              </div>
+        </div>
+        <script src="../script.js" defer></script>
+      </body>
+      </html>

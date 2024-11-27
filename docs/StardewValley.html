@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Title and Favicon go here-->
+    <title>AchievementLog</title>
+    <link rel="stylesheet" href="/CSS/Games.css">
+    <link rel="icon" href="/ImgandVid/achievementlog-high-resolution-logo-transparent.png" alt="Logo" width="150" height="50">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />"
+    <script src="../script.js"></script>
+  </head>
+  <body>
+
+
+  <!-- This will be the header 
+  Click brings you to Index/Homepage-->
+  <div class="wrapper">
+    <header id ="titlecontainer">
+    <!--Allows you to click on the header and be brought back to homepage-->
+      <h1 id="title"><a href="/Index.html"> AchievementLog</a></h1>
+    </header>
+
+
+  <!-- Navigation Section-->
+   <button id="openNav" onclick="openSidebar()"><i class="fa fa-bars"></i></button>
+      <div class="navBar"> <!--Wrapper for everything for sidebar-->
+        <a href="/Index.html">Home</a>
+        <div class="dropdown"> <!--Wrapper for button-->
+          <button class="dropdown-btn">
+            Games 
+            <i class="fas fa-caret-right"></i> 
+          </button>
+          <div id="myDropdown" class="dropdown-container"> <!--Wrapper for the links in button-->
+              <a href="/docs/StardewValley.html">Stardew Valley</a>
+              <a href="/docs/Minecraft.html">Minecraft</a>
+              <a href="/docs/Littlewood.html">LittleWood</a>
+            </div>
+        </div>
+      <!--Wrapper for everything deals with this-->
+        <a href="/docs/AboutContact.html">About</a>
+        <a href="/docs/FAQ.html">FAQ</a>
+        <a href="/docs/AboutContact.html#Contact" onclick="scrollIntoView()"> Contact</a>
+        <button  id=closeNav onclick="closeSidebar()"><i class="fa fa-times"></i></button>
+    </div>
+
+    <!--Put a discalimer here-->
+    <div class="disclaimer">
+      <p id="discalimer">
+        This website is a unoffical fan website. It has no relation to any of the games here persented. 
+        It was made by a student for their coding class.
+      </p>
+    </div>
+
+    <!--Main Content Area e.g Achievement, Checklist etc-->
+    <div class="container">
+      <!--Achievement Section-->
+      <div class="ToA">
+        <h3>Achievements</h3>
+        <div class="ach-row">
+          <ul class="ach-list" >
+          <li><input type="checkbox" id="checkboxAch"><strong> Cowpoke: </strong> <span class="descrption"><br>It's only 50,000g should be able to get it with just crops but farm products should help</span></li>
+          <li><input type="checkbox" id="checkboxAch"><strong> Homesteader: </strong>  <span class="descrption"> <br>250,000g? Honestly should get this in a couple of seasons be patient and make sure you get those quality crops</span></li>
+          <li><input type="checkbox" id="checkboxAch"><strong>  Milionaire:</strong>  <span class="descrption"> <br>1,000,000g should be easy and completed by year 2 if you have a good sell going</span></li>
+          <li><input type="checkbox" id="checkboxAch"><strong> Legend: </strong>  <span class="descrption"> <br>10,000,000g???? Bro I've got over a 1000hours and I haven't reached this Achievement</span></li>
+          <li><input type="checkbox" id="checkboxAch"><strong> Treasure Trove: </strong>  <span class="descrption"> <br>Donating 40 items to the museum is easy you'll get it done by the first year even if you sell geodes</span></li>
+          <li><input type="checkbox" id="checkboxAch"><strong> A Complete Collection: </strong>  <span class="descrption"> <br> Completing the museum should be easy! My advice sell the geodes until you get a good income going.</span></li>
+          <li><input type="checkbox" id="checkboxAch"><strong> A New Friend:</strong>  <span class="descrption"> <br> If you want to get this over and done with make friends with Linus since you could get this done in spring but if you want to relax I suggest holding off on making friends till fall or winter. </span></li>
+          <li><input type="checkbox" id="checkboxAch"><strong> Best Friends: </strong>  <span class="descrption"> <br>If only I could reach 10 hearts relationship with Robin *sigh*</span></li>
+          <li><input type="checkbox" id="checkboxAch"><strong> The Beloved Farmer: </strong> <span class="descrption">  <br>Imagine being 10 hearts with 8 people IRL... I seriously dont know how extroverts do it. </span></li>
+          <li><input type="checkbox" id="checkboxAch"><strong> Cliques:</strong>  <span class="descrption"> <br> 6 hearts with 4 people I cant even make 6 hearts with 3 people IRL</span></li>
+          <li><input type="checkbox" id="checkboxAch"><strong> Networking:</strong>  <span class="descrption"> <br>6 hearts with 10 people is more than anyone of us will get IRL</span></li>
+          <li><input type="checkbox" id="checkboxAch"><strong> Popular: </strong>  <span class="descrption"> <br>5 hearts with 20 people?? </span></li>
+          <li><input type="checkbox" id="checkboxAch"><strong> Cook:</strong>  <span class="descrption"> <br> Imagine cooking 10 reciepes in the sims as a beginner</span></li>
+          <li><input type="checkbox" id="checkboxAch"><strong> Sous Chef: </strong>  <span class="descrption"><br>Cooking 25 different reciepes</span></li>
+          <li><input type="checkbox" id="checkboxAch"><strong> Gourmet Chef: </strong>  <span class="descrption"><br>Yeah I don't think I've ever cooked every reciepe </highlight> in SDV</span></li>
+          <li><input type="checkbox" id="checkboxAch"><strong> Moving Up: </strong>  <span class="descrption"> <br>I cried everytime I had to upgrade a house</span></li>
+          <li><input type="checkbox" id="checkboxAch"><strong> Living Large:</strong>  <span class="descrption"> <br>Upgrade it one more time and you get this achievement but remember young padawan it costs money</span></li>
+          <li><input type="checkbox" id="checkboxAch"><strong> D.I.Y: </strong> <span class="descrption"> <br>Have I ever crafted 15 different items? Oh well I'm sure I have</span></li>
+          <li><input type="checkbox" id="checkboxAch"><strong> Artisian:</strong>  <span class="descrption"> <br>Ah yknow what Artisian sounds familiar I think I have for sure crafted 30 different items</span></li>
+          <li><input type="checkbox" id="checkboxAch"><strong> Craft master:</strong>  <span class="descrption"><br>I have definetly not crafted every item.</span></li>
+          <li><input type="checkbox" id="checkboxAch"><strong> Fisherman:</strong>  <span class="descrption"><br>Catching 10 different fish is easy trust. </span></li>
+          <li><input type="checkbox" id="checkboxAch"><strong> Ol' Mariner:</strong>  <span class="descrption"><br>Catching 24 different fish is a bit harder but you can do it</span></li>
+          <li><input type="checkbox" id="checkboxAch"><strong> Master Angler:</strong>  <span class="descrption"><br>My advice is to not look at this until Ol'Miner and then look at your collections and take out the wiki </span></li>
+          <li><input type="checkbox" id="checkboxAch"><strong> Mother Catch:</strong>  <span class="descrption"><br>This should be easy for you its only a 100 fish and its ok if theyre different bud </span></li>
+          <li><input type="checkbox" id="checkboxAch"><strong> Gofer:</strong>  <span class="descrption"> <br>Completing 10 different "Help Wanted" requests  is easy and my advice is to make aquaintences with Clint cause he usually doesn't want the ore</span></li>
+          <li><input type="checkbox" id="checkboxAch"><strong> A Big Help: </strong> <span class="descrption"><br>Completing 40 will take a long time you'll just get some weird ones </span></li>
+          <li><input type="checkbox" id="checkboxAch"><strong> Polyculture:</strong>  <span class="descrption"><br> Selling 15 crops- oh wait 15 of each crop? Good luck solider </span></li>
+          <li><input type="checkbox" id="checkboxAch"><strong> Monoculture: </strong> <span class="descrption"><br>300 OF EACH CROP??? If you want to use cheats I'd understand</span></li>
+          <li><input type="checkbox" id="checkboxAch"><strong> Fullshipment: </strong> <span class="descrption"> <br>Ah now you see every item not 'n' of each time just one of each item this should be much easier</span></li>
+          <li><input type="checkbox" id="checkboxAch"><strong> Pirarie King:</strong>  <span class="descrption"> <br>I don't care what people say finishing Prairie King is harder than Junimo Kart</span></li>
+          <li><input type="checkbox" id="checkboxAch"><strong> The Bottom:</strong>  <span class="descrption"><br> Mining and Farming are the core of this game you'll get at lvl 120 of the mines most likely at the end of summer</span></li>
+          <li><input type="checkbox" id="checkboxAch"><strong> Local Legend: </strong> <span class="descrption"><br> TEAM RESTORE COMMUNITY CENTRE</span></li>
+          <li><input type="checkbox" id="checkboxAch"><strong> Jojo Member of the Year:</strong>  <span class="descrption"> <br>If you do the Joja route im dissapointed you I dont care if you don't like pierre thats no excuse</span></li>
+          <li><input type="checkbox" id="checkboxAch"><strong> Mystery of the stardrops: </strong> <span class="descrption"><br> I don't think I've ever found every stardrop</span></li>
+          <li><input type="checkbox" id="checkboxAch"><strong> Full House:</strong>  <span class="descrption"><br> Get married and have TWO kids? Damn i think all my saves I've only been asked once </span></li>
+          <li><input type="checkbox" id="checkboxAch"><strong> Singular Talent:</strong>  <span class="descrption"><br> I guess I'll give you the basic recommendation of reaching level 10 of any of the skills</span></li>
+          <li><input type="checkbox" id="checkboxAch"><strong> Master of the Five Way: </strong> <span class="descrption"><br>Order of focus to reach level 10 in: Farming, Foraging, Fishing, the rest of them</span></li>
+          <li><input type="checkbox" id="checkboxAch"><strong> Protector of the Valley:</strong>  <span class="descrption"> <br>I have come close to finishing all the Adventure Guild Slayer goals but I've never actually completed it </span></li>
+          <li><input type="checkbox" id="checkboxAch"><strong> Fector's Challenge: </strong> <span class="descrption"><br> Look it's up to you if you want to beat Prairie King without dying it aint on me</span></li>
+          <li><input type="checkbox" id="checkboxAch"><strong> A Distant Shore: </strong>  <span class="descrption"><br>My guilty habit is trying to speed run getting to Ginger island</span></li>
+          <li><input type="checkbox" id="checkboxAch"><strong> Well-Read: </strong>  <span class="descrption"><br> Honestly when it comes to the books just don't focus on it think of it as a misc</span></li>
+          <li><input type="checkbox" id="checkboxAch"><strong> Two Thumbs up:</strong>  <span class="descrption"><br>Which movie do you want to see?</span></li>
+          <li><input type="checkbox" id="checkboxAch"><strong> Blue Ribbon:</strong>  <span class="descrption"> <br>I only try to win 1st place in the SV Fair once and that's it I only do it so they understand I should be feared</span></li>
+          <li><input type="checkbox" id="checkboxAch"><strong> An Unforgettable Soup:</strong>  <span class="descrption"><br>I can never get the right quality of product for the soup for the governor cause most of the product is kept for kegging or relationships</span></li>
+          <li><input type="checkbox" id="checkboxAch"><strong> Good Neighbours:</strong>  <span class="descrption"><br> RESTORE THE COMMUNITY! RESTORE THE COMMUNITY!</span></li>
+          <li><input type="checkbox" id="checkboxAch"><strong> Danger in the Deep:</strong>  <span class="descrption"> <br>This has to do with a Qi challenge where you basically have to go through a dangerous version of the mines again</span></li>
+          <li><input type="checkbox" id="checkboxAch"><strong> Infinite Power:</strong>  <span class="descrption"><br> The official wiki and game say that the Infinity Blade holds infinite power but I say its the golden synthe</span></li>
+          <li><input type="checkbox" id="checkboxAch"><strong> Perfection: </strong>  <span class="descrption"><br> Well done you've achieved the impossible! </span></li>
+          </ul>
+        </div> <!--End Row-->
+      </div> <!--End ToA-->
+
+      <div class="bundles">
+        <h3>Bundles</h3>
+        <div class="ach-row">
+          <ul class="ach-list">
+            <!--Spring Foragin Bundle-->
+            <li><input type="checkbox" id="checkboxAch">
+              <strong>Spring Foraging Bundle</strong>
+              <span class="descrption">
+                <br> Wild Foraging
+                <br> Daffodil
+                <br>Dandelions
+                <br>Leek
+              </span>
+            </li>
+            <!--Summer Foraging Bundle-->
+            <li><input type="checkbox" id="checkboxAch">
+              <strong>Summer Foraging Bundle</strong>
+              <span class="descrption">
+                <br> Grape
+                <br> Spice Berry
+                <br> Sweet Pea
+              </span>
+            </li>
+            <!--Fall Foraging Bundle-->
+            <li><input type="checkbox" id="checkboxAch">
+              <strong>Fall Foraging Bundle</strong>
+              <span class="descrption">
+                <br> Common Mushroom
+                <br> Wild Plum
+                <br> Hazelnut
+                <br> Blackberry
+              </span>
+            </li>
+            <!-- Winter Foraging Bundle-->
+            <li><input type="checkbox" id="checkboxAch">
+              <strong>Winter Foraging Bundle</strong>
+              <span class="descrption">
+                <br> Winter Root
+                <br> Crystal Fruit
+                <br>Snow Yam
+                <br>Crocus
+              </span>
+            </li>
+            <!--Construction Bundle-->
+            <li><input type="checkbox" id="checkboxAch">
+              <strong>Construction Bundle</strong>
+              <span class="descrption">
+                <br> Wood x 199
+                <br> Stone x99
+                <br>Hardwood x10
+              </span>
+            </li>
+            <!--Spring Crop Bundle-->
+            <li><input type="checkbox" id="checkboxAch">
+              <strong>Spring Crop Bundle</strong>
+              <span class="descrption">
+                <br> Parsnip
+                <br> Green Bean
+                <br>Cauliflower
+                <br>Potato
+              </span>
+            </li>
+            <!-- Summer Crop Bundle-->
+            <li><input type="checkbox" id="checkboxAch">
+              <strong>Summer Bundle</strong>
+              <span class="descrption">
+                <br> Grape
+                <br> Spice Berry
+                <br>Sweet Pea
+              </span>
+            </li>
+            <!-- Fall Crop Bundle-->
+            <li><input type="checkbox" id="checkboxAch">
+              <strong>Fall Crop Bundle</strong>
+              <span class="descrption">
+                <br> Common Mushroom
+                <br> Wild Plum
+                <br>Hazelnut
+                <br>Blackberry
+              </span>
+            </li>
+            <!-- Quality Crop Bundle-->
+            <li><input type="checkbox" id="checkboxAch">
+              <strong>Quality Crop Bundle</strong>
+              <span class="descrption">
+                <br> Gold Star Parsnips x5
+                <br> Gold Star Melon x5
+                <br> Gold Star Pumpkin x5
+                <br> Gold Star Corn x5
+              </span>
+            </li>
+            <!--Animal Bundle-->
+            <li><input type="checkbox" id="checkboxAch">
+              <strong>Animal Bundle</strong>
+              <span class="descrption">
+                <br> Large Milk
+                <br> Large Goat Milk
+                <br>Large Brown Egg
+                <br>Large White Egg
+                <br>Duck Egg
+                <br>Wool 
+              </span>
+            </li>
+            <!--Artisian Bundle-->
+            <li><input type="checkbox" id="checkboxAch">
+              <strong>Artisian Bundle</strong>
+              <span class="descrption">
+                <br> Pomegranete
+                <br> Peach
+                <br>Orange
+                <br>Apricot
+                <br>Jelly
+                <br>Apple  
+                <br>Honey 
+                <br>Cheese
+                <br>Goat Cheese 
+                <br>Cloth
+                <br>Truffle Oil
+              </span>
+            </li>
+            <!--River Fish Bundle-->
+            <li><input type="checkbox" id="checkboxAch">
+              <strong>River Fish Bundle</strong>
+              <span class="descrption">
+                <br> Sunfish
+                <br> Catfish
+                <br>Shad 
+                <br> Tiger Trout
+              </span>
+            </li>
+            <!--Lake Fish Bundle-->
+            <li><input type="checkbox" id="checkboxAch">
+              <strong>Lake Fish Bundle</strong>
+              <span class="descrption">
+                <br> Largemouth Bass
+                <br> Carp
+                <br>Bullhead
+                <br> Sturgeon
+              </span>
+            </li>
+            <!--Ocean Fish Bundle-->
+            <li><input type="checkbox" id="checkboxAch">
+              <strong>Ocean Fish</strong>
+              <span class="descrption">
+                <br> Sardine
+                <br> Red Snapper
+                <br>Tilapia
+                <br> Tuna
+              </span>
+            </li>
+            <!--Night Fish Bundle-->
+            <li><input type="checkbox" id="checkboxAch">
+              <strong>Night Fish Bundle</strong>
+              <span class="descrption">
+                <br> Bream
+                <br> Eel
+                <br>Walleye
+              </span>
+            </li>
+            <!--Crab Pot Bundle-->
+            <li><input type="checkbox" id="checkboxAch">
+              <strong>Crab Pot Bundle</strong>
+              <span class="descrption">
+                <br> Calm
+                <br> Crab
+                <br>Oyster
+                <br>Lobster
+                <br>Apricot
+                <br>Cockle
+                <br>Mussel
+                <br>Shrimp
+                <br>Periwinkle
+                <br>Crayfish
+              </span>
+            </li>
+            <!--Speciality Fish Bundle-->
+            <li><input type="checkbox" id="checkboxAch">
+              <strong>Speciality Fish Bundle</strong>
+              <span class="descrption">
+                <br> Ghost  FIsh
+                <br> Woodskip
+                <br>Pufferfish
+                <br>Sandfish
+              </span>
+            </li>
+            <!--Black Smith Bundle-->
+            <li><input type="checkbox" id="checkboxAch">
+              <strong>Black Smith Bundle</strong>
+              <span class="descrption">
+                <br> Cooper
+                <br> Iron
+                <br>Gold
+              </span>
+            </li>
+            <!--Geoligist Bundle-->
+            <li><input type="checkbox" id="checkboxAch">
+              <strong>Geoligist  Bundle</strong>
+              <span class="descrption">
+                <br> Earth Crystal
+                <br> Quartz
+                <br> Frozen Tear 
+                <br> Fire Quartz
+              </span>
+            </li>
+            <!--Adventurers Bundle-->
+            <li><input type="checkbox" id="checkboxAch">
+              <strong>Adventurers Bundle</strong>
+              <span class="descrption">
+                <br> Bat Wing x10
+                <br> Solar Essence
+                <br>Frozen Tear 
+                <br>Void Essence
+              </span>
+            </li>
+            <!--Chef Bundle-->
+            <li><input type="checkbox" id="checkboxAch">
+              <strong>Chef Bundle</strong>
+              <span class="descrption">
+                <br> Maple Syrup
+                <br> Fried Egg
+                <br>Poppy
+                <br> Maki Roll
+                <br>Fiddelhead Fern 
+                <br>Truffle
+              </span>
+            </li>
+            <!--Dye Bundle-->
+            <li><input type="checkbox" id="checkboxAch">
+              <strong>Dye Bundle</strong>
+              <span class="descrption">
+                <br> Red Mushroom 
+                <br> Aquamarine
+                <br>Sea Urchin
+                <br>Sunflower
+                <br>Duck Feather
+                <br>Red Cabbage
+              </span>
+            </li>
+            <!--Field Research Bundle-->
+            <li><input type="checkbox" id="checkboxAch">
+              <strong>Field Research Bundle</strong>
+              <span class="descrption">
+                <br> Chub
+                <br> Purple Mushroom
+                <br>Frozen geodes
+                <br> Nautilus Shell
+              </span>
+            </li>
+            <!--Fodder Bundle-->
+            <li><input type="checkbox" id="checkboxAch">
+              <strong>Fodder Bundle</strong>
+              <span class="descrption">
+                <br> Wild Foraging
+                <br> Daffodil
+                <br>Dandelions
+              </span>
+            </li>
+            <!--Enchanters Bundle-->
+            <li><input type="checkbox" id="checkboxAch">
+              <strong>Enchanters Bundle</strong>
+              <span class="descrption">
+                <br> Oak Resin
+                <br> Pomegranete
+                <br>Wine 
+                <br>Rabbit's Foot
+              </span>
+            </li>
+            <!--Money Bundle-->
+            <li><input type="checkbox" id="checkboxAch">
+              <strong>Money Bundle</strong>
+              <span class="descrption">
+                <br> 2,500g
+                <br> 5,000g
+                <br>10,000g 
+                <br> 25,000g
+              </span>
+            </li>
+            <!--Abandond Jojo Mart Bundle-->
+            <li><input type="checkbox" id="checkboxAch">
+              <strong>jojo Bundle</strong>
+              <span class="descrption">
+                <br> Silver+ Wine
+                <br> Gold Star Ancient Fruit x5
+                <br>Gold + Void Salmon
+                <br>Caviar
+                <br>Dino Mayo
+                <br>Rainbow Shard
+              </span>
+            </li>
+          </ul>
+        </div> <!--Ends row-->
+      </div> <!-- End Bundles-->
+      
+      <!--This is for Special Items-->
+        <div class="specitems">
+          <h3>Special Items</h3>
+          <div class="ach-row">
+            <ul class="ach-list" >
+      <li><input type="checkbox" id="checkboxAch"><strong> Forest Magic: </strong> <span class="descrption"><br>Read Junimo Language</span></li>
+          <li><input type="checkbox" id="checkboxAch"><strong> Dwarvish Translation Guide: </strong>  <span class="descrption"> <br>Ability to speak the language of the dwarfs</span></li>
+          <li><input type="checkbox" id="checkboxAch"><strong>  Rusty Key:</strong>  <span class="descrption"> <br>Enter the sewers</span></li>
+          <li><input type="checkbox" id="checkboxAch"><strong> Club Card: </strong>  <span class="descrption"> <br>Enter the Casino</span></li>
+          <li><input type="checkbox" id="checkboxAch"><strong> Special Charm: </strong>  <span class="descrption"> <br>Increases daily luck</span></li>
+          <li><input type="checkbox" id="checkboxAch"><strong> Skull Key: </strong>  <span class="descrption"> <br> Unlocks Junimo Kart and Skull Cavern</span></li>
+          <li><input type="checkbox" id="checkboxAch"><strong> Magnifying Glass:</strong>  <span class="descrption"> <br> Able to find Secret Notes.</span></li>
+          <li><input type="checkbox" id="checkboxAch"><strong> Dark Talisman: </strong>  <span class="descrption"> <br> Opens the passage </span></li>
+          <li><input type="checkbox" id="checkboxAch"><strong> Magic Ink:</strong>  <span class="descrption"> <br> Unlocks new buildings that can be found in the Wizard's tower</span></li>
+          <li><input type="checkbox" id="checkboxAch"><strong> Bear's Knowledge:</strong>  <span class="descrption"> <br>Blackberries and Salmonberries cost 3x more</span></li>
+          <li><input type="checkbox" id="checkboxAch"><strong> Spring Onion Mastery:</strong>  <span class="descrption"> <br>Spring Onion cost by 5x</span></li>
+          <li><input type="checkbox" id="checkboxAch"><strong> Key To The Town:</strong>  <span class="descrption"> <br>Get into the majority of buildings in town</span></li>
+        </ul>
+      </div> <!--End Row-->
+    </div> <!--End ToA-->
+
+
+      <!--Book Powers-->
+      <div class="bpowers">
+        <h3>Book Powers</h3>
+        <div class="ach-row">
+          <ul class="ach-list" >
+    <li><input type="checkbox" id="checkboxAch"><strong> Pirce Catalouge</strong> <span class="descrption"><br>See the prices</span></li>
+        <li><input type="checkbox" id="checkboxAch"><strong> Mapping the Cave Systems </strong>  <span class="descrption"> <br>50% off on getting items back</span></li>
+        <li><input type="checkbox" id="checkboxAch"><strong>  Way of the Wind prt1:</strong>  <span class="descrption"> <br>Speed +</span></li>
+        <li><input type="checkbox" id="checkboxAch"><strong> Way of the Wind prt2: </strong>  <span class="descrption"> <br>Speed ++</span></li>
+        <li><input type="checkbox" id="checkboxAch"><strong> Monster Compendium: </strong>  <span class="descrption"> <br>Monster Double Loot drops +</span></li>
+        <li><input type="checkbox" id="checkboxAch"><strong> Friendship 101: </strong>  <span class="descrption"> <br> Friendship Growth +</span></li>
+        <li><input type="checkbox" id="checkboxAch"><strong> Jack be Nimble, Jack be Thick:</strong>  <span class="descrption"> <br> Defense +</span></li>
+        <li><input type="checkbox" id="checkboxAch"><strong> Woodys Secret: </strong>  <span class="descrption"> <br> Wood Drops +</span></li>
+        <li><input type="checkbox" id="checkboxAch"><strong> Racoon Journal:</strong>  <span class="descrption"> <br> Weeds drop +</span></li>
+        <li><input type="checkbox" id="checkboxAch"><strong> Jewels of the Sea:</strong>  <span class="descrption"> <br> Higher chance of getting roe in treasures when fishing</span></li>
+        <li><input type="checkbox" id="checkboxAch"><strong> Dwarvish Safety Manual:</strong>  <span class="descrption"> <br>Bomb damage -25%</span></li>
+        <li><input type="checkbox" id="checkboxAch"><strong> The Art O'Crabbing:</strong>  <span class="descrption"> <br>Crab Pots+</span></li>
+        <li><input type="checkbox" id="checkboxAch"><strong> The Alleyway Buffet: </strong>  <span class="descrption"> <br>Better Trash Diver</span></li>
+        <li><input type="checkbox" id="checkboxAch"><strong>  The Diamond Hunter:</strong>  <span class="descrption"> <br>All stones have a chance to drop a diamond when mined by hand</span></li>
+        <li><input type="checkbox" id="checkboxAch"><strong> Book of Mysteries: </strong>  <span class="descrption"> <br>Mystery Box Forager +</span></li>
+        <li><input type="checkbox" id="checkboxAch"><strong> Horse: The Book: </strong>  <span class="descrption"> <br>Horse Speed+</span></li>
+        <li><input type="checkbox" id="checkboxAch"><strong> Treasure Appraisal Guide: </strong>  <span class="descrption"> <br> Articats - sell +</span></li>
+        <li><input type="checkbox" id="checkboxAch"><strong> Of Slitehrlegs:</strong>  <span class="descrption"> <br> Speed + tough grass and crops.</span></li>
+        <li><input type="checkbox" id="checkboxAch"><strong> Animal Catalouge: </strong>  <span class="descrption"> <br> You don't need Marnie no more. </span></li>
+      </ul>
+    </div> <!--End Row-->
+  </div> <!--End ToA-->
+  
+      </div>
+    </div>
+  </div>
+      <!--Footer-->
+      <div class="footer">
+        <div class="footer-logo">
+          <img src="/ImgandVid/achievementlog-high-resolution-logo-transparent.png" alt="Logo" width="150" height="50">        </div>
+          <a href="/docs/FAQ.html">FAQ</a>
+          <a href="/docs/AboutContact.html">  About</a>
+          <a href="/docs/AboutContact.html#contact" onclick="scrollIntoView()">Contact</a>
+          <a href="/docs/Index.html">Home</a>
+        
+            <p>&copy; 2024 AchievementLog</p>
+        </div>
+  </div>
+
+  
+</body>
+</html>
+<!--Achievement section is inspired by 
+        view-source:https://steamcommunity.com/stats/413150/achievements inspiration for style sheet is also found in
+        the game_achievements.css-->
