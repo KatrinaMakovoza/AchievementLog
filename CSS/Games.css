@@ -14,6 +14,7 @@ body {
   background-color: transparent;
   color: 333333;
   font-family: Arial, sans-serief;
+  background-color: #3Cb371;
 }
 
 /*H3 Style */
@@ -382,6 +383,7 @@ height: 800px;
 /*Footer */
 .footer{
   flex-direction: row;
+  height: 310px;
   
   }
 
@@ -433,6 +435,7 @@ word-wrap: break-word;
   align-items: center;
   text-align: center;
   gap: 20px;
+  height: 310px;
 }
 }
 
