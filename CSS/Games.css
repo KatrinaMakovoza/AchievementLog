@@ -336,33 +336,37 @@ height: 800px;
 
   /*------------------------------------MEDIA CSS---------------------------------------------------------------------*/
   /* Small phone screen*/
-  @media (max-width: 480px){
+  @media (max-width: 600px){
     body{
       font-size: 14px;
     }
-  }
+  
 
   /* Header*/
   #title{
     font-size: 40px;
     padding: 5%;
-  }
+    }
+
+  .container, .mccontainer, .lwcontainer {
+    flex-direction: column;
+    }
 
   /* navBar*/
   .navBar{
     width: 100px;
-  }
+    }
 
 /* Links */
 .navbar a, .dropdown-btn {
   font-size: 14px;
   padding: 5px;
-}
+  }
 
 /* Container links dropdown*/
 .dropdown-container a{
   font-size: 12px;
-}
+  }
 /*Main Area */
 .ToA, .bundles, .specitems, .bpowers, .mChecklist, .ToAMC, .ToLW{
   width: 100%;
@@ -370,16 +374,20 @@ height: 800px;
   margin: 5px;
   padding: 10px;
   word-wrap: break-word;
-}
+  }
+
+.ach-row, .mc-ach-row, .lwcontainer  {
+  width: 70% ;
+  }
 /*Footer */
 .footer{
-  flex-direction: column;
-  text-align: center;
-  gap: 10px;
-}
+  flex-direction: row;
+  
+  }
 
 h3, p, ul, li{
   overflow-wrap: break-word;
+  }
 }
 
 /*-Larger Phones-*/
@@ -387,7 +395,7 @@ h3, p, ul, li{
   body{
     font-size: 16px;
   }
-}
+
 
 /* Header*/
 #title{
@@ -425,5 +433,6 @@ word-wrap: break-word;
   align-items: center;
   text-align: center;
   gap: 20px;
+}
 }
 
