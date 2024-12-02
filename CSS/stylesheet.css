@@ -153,6 +153,11 @@ flex-direction: column;
   border-radius: 8px;
   float: right;
 }
+
+.img{
+  width: 400px;
+  height: 400px;
+}
 /*--------------------------------------------------------------------FAQ-------------------------------------------- */
 .faq{
   background-color: #333333;
