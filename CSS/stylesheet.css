@@ -316,7 +316,7 @@ a:active {
   .mainarea,
   .AboutMe,
   .contact,
-  faq,
+  .faq,
   .faqAns {
     flex-direction: column;
   }
@@ -342,7 +342,7 @@ a:active {
 }
 
 /* Small phone screen*/
-@media (max-width: 500px) {
+@media (max-width: 6.3inch) {
   body {
     font-size: 14px;
   }
@@ -390,7 +390,7 @@ a:active {
   /*Footer */
   .footer {
     flex-direction: row;
-    height: 310px;
+    height: 210px;
   }
 
   h3,
