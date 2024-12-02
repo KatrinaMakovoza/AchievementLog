@@ -152,11 +152,13 @@ flex-direction: column;
   border: #0082a7 3px groove;
   border-radius: 8px;
   float: right;
+  margin-right: 10px;
 }
 
-.img{
-  width: 400px;
-  height: 400px;
+#imgugly{
+  width: 600px;
+  height: 600px;
+
 }
 /*--------------------------------------------------------------------FAQ-------------------------------------------- */
 .faq{
@@ -312,10 +314,14 @@ padding: 10px;
     font-size: 12px;
     }
     
-    .img{
-      width: 200px;
-      height: 200px
-    }
+  .picture {
+    height: 200px;
+    width: 250px;
+  }
+  .img{
+    height: 100px;
+    width: 100px;
+  }
 
 /*Footer */
 .footer{
@@ -362,6 +368,14 @@ h3, p, ul, li{
     flex-direction: column;
     }
 
+  .picture {
+    height: 200px;
+    width: 250px;
+  }
+  .img{
+    height: 200px;
+    width: 200px;
+  }
 
   /*Footer */
   .footer{
@@ -372,9 +386,6 @@ h3, p, ul, li{
     height: 310px;
   }
 
-  .picture, .img{
-    height: 200px;
-    width: 200px;
-  }
+  
 
 }
