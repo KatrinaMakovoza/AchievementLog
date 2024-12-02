@@ -389,8 +389,13 @@ a:active {
 
   /*Footer */
   .footer {
+    display: flex;
     flex-direction: row;
-    height: 210px;
+    height: auto;
+    position: absolute;
+    align-items: center;
+   text-align: center;
+    gap: 10px
   }
 
   h3,
