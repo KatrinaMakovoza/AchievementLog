@@ -285,7 +285,7 @@ a:active {
 /* -------------------@Media----------------*/
 
 /*-Larger Phones-*/
-@media (min-width: 600px) {
+@media (min-width: 800px) {
   body {
     font-size: 16px;
   }
@@ -323,7 +323,7 @@ a:active {
 
   .picture {
     height: 300px;
-    width: 350px;
+    width: 607px;
   }
   .imgugly {
     height: 300px;
@@ -342,7 +342,7 @@ a:active {
 }
 
 /* Small phone screen*/
-@media (min-width: 100px) {
+@media (max-width: 500px) {
   body {
     font-size: 14px;
   }
@@ -355,7 +355,7 @@ a:active {
   .mainarea,
   .AboutMe,
   .contact,
-  faq,
+  .faq,
   .faqAns {
     flex-direction: column;
   }
