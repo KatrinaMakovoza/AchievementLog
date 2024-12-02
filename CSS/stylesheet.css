@@ -367,8 +367,9 @@ h3, p, ul, li{
     height: 310px;
   }
 
-  .picture{
+  .picture, .img{
     height: 200px;
     width: 200px;
   }
+
 }
