@@ -317,10 +317,12 @@ padding: 10px;
   .picture {
     height: 200px;
     width: 250px;
+    margin-right: 400px;
   }
-  .img{
-    height: 100px;
-    width: 100px;
+  #imgugly{
+    height: 195px;
+    width: 243px;
+    border-radius: 4px
   }
 
 /*Footer */
@@ -369,12 +371,14 @@ h3, p, ul, li{
     }
 
   .picture {
-    height: 200px;
-    width: 250px;
+    height: 300px;
+    width: 350px;
+    margin-right: 500px;
   }
-  .img{
-    height: 200px;
-    width: 200px;
+  .imgugly{
+    height: 300px;
+    width: 300px;
+    border-radius: 5px;
   }
 
   /*Footer */
