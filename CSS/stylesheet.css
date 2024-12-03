@@ -312,12 +312,8 @@ a:active {
   .dropdown-container a {
     font-size: 12px;
   }
-
-  .mainarea,
-  .AboutMe,
-  .contact,
-  .faq,
-  .faqAns {
+  /*index */
+  .mainarea {
     flex-direction: column;
   }
 
@@ -326,10 +322,29 @@ a:active {
     width: 607px;
   }
   .imgugly {
-    height: 300px;
-    width: 300px;
+    height: 100px;
+    width: 100px;
     border-radius: 5px;
   }
+
+  /*AboutContact */
+    /*About and Contact */
+    .AboutMe, .contact{
+      display: flex;
+      flex-direction: column;
+      width: 90%;
+      margin-left: 40px;
+    }
+  #img{
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    width: 90%;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    margin-right: 20px;
+  }
+
 
   /*Footer */
   .footer {
@@ -342,7 +357,7 @@ a:active {
 }
 
 /* Small phone screen*/
-@media (max-width: 6.3inch) {
+@media (max-width: 605px) {
   body {
     font-size: 14px;
   }
@@ -351,13 +366,35 @@ a:active {
     font-size: 40px;
     padding: 5%;
   }
-
-  .mainarea,
-  .AboutMe,
-  .contact,
-  .faq,
-  .faqAns {
+  /*index */
+  .mainarea {
     flex-direction: column;
+  }
+
+  .picture {
+    height: 200px;
+    width: 250px;
+  }
+  #imgugly {
+    height: 195px;
+    width: 243px;
+    border-radius: 4px;
+  }
+
+  /*About and Contact */
+  .AboutMe, .contact{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-left: 40px;
+  }
+  #img{
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    width: 90%;
+    margin-bottom: 25px;
+    margin-top: 25px;
   }
 
   /* navBar*/
@@ -377,15 +414,7 @@ a:active {
     font-size: 12px;
   }
 
-  .picture {
-    height: 200px;
-    width: 250px;
-  }
-  #imgugly {
-    height: 195px;
-    width: 243px;
-    border-radius: 4px;
-  }
+
 
   /*Footer */
   .footer {
@@ -397,7 +426,14 @@ a:active {
    text-align: center;
     gap: 10px
   }
+  #copyright{
+    font-size: xx-small;
+  }
 
+  #logo{
+    height: 30px;
+    width: 75px;
+  }
   h3,
   p,
   ul,
