@@ -1,7 +1,7 @@
 /* Reset Style */
 * {
   margin: 0;
-  box-sizing: border-box;
+  box-sizing:border-box;
   padding: 0;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
@@ -14,7 +14,7 @@ body {
   background-color: transparent;
   color: 333333;
   font-family: Arial, sans-serief;
-  background-color: #3cb371;
+  background-color: #3Cb371;
 }
 
 /*H3 Style */
@@ -24,8 +24,9 @@ h3 {
   margin-top: 5px;
   /* Maybe put a background colour to make it stand out*/
 }
-.wrapper {
+.wrapper{
   transition: margin-left 0.3s;
+  width: 100%;
 }
 
 /*Header Style*/
@@ -33,11 +34,11 @@ h3 {
   align-items: center;
   justify-content: center;
   margin: 0cm auto;
-  background: linear-gradient(#3cb371, #8b4513, #add8e6);
+  background:linear-gradient(#3Cb371, #8B4513, #ADD8E6);
 }
 #title {
   font-size: 80px;
-  color: #ffd700;
+  color: #FFD700;
   text-align: center;
   padding: 2%;
 }
@@ -49,45 +50,45 @@ h3 {
 }
 
 /*Nav Buttons*/
-#openNav {
+#openNav{
   position: fixed;
   top: 10px;
   left: 10px;
   border: none;
   color: #ffffff;
   background-color: transparent;
-  font-size: 40px;
-  width: 60px;
+ font-size: 40px;
+ width: 60px;
 }
 
-#closeNav {
+#closeNav{
   position: fixed;
   top: 10px;
   left: 10px;
   border: none;
   color: #ffffff;
   background-color: transparent;
-  font-size: 35px;
-  width: 60px;
+ font-size: 35px;
+ width: 60px;
 }
 /*Navigation Section */
 /* Sidebar Style */
 
 .navBar {
   position: fixed;
-  top: 0; /*Dont remove keeps ithe bar at the  top */
+  top:0; /*Dont remove keeps ithe bar at the  top */
   left: 0;
   padding: 0;
   width: 200px;
   height: 100%;
-  background-image: linear-gradient(#87ceeb, #ff7f50);
+  background-image: linear-gradient(#87CEEb, #FF7F50);
   border: 5px inset #6a3093;
-}
+  }
 
+  
 /* Styling of content in sidebar*/
 /*Links and dropdown button */
-.navBar a,
-.dropdown-btn {
+.navBar a, .dropdown-btn {
   padding: 10px 10px 10px;
   text-decoration: none;
   font-size: 20px;
@@ -104,13 +105,14 @@ h3 {
 /*Dropdown btn  and navbar links on hover and focus */
 .dropdown-btn:hover,
 .navBar a:hover {
-  background-color: #87ceeb; /* Change the colour later*/
+  background-color:#87ceeb; /* Change the colour later*/
 }
 
 /* Dropdown container */
 .dropdown-container {
   display: none;
   margin-left: 5px;
+  
 }
 
 .dropdown:hover .dropdown-container {
@@ -134,10 +136,10 @@ h3 {
   margin-left: 10px;
 }
 
-.dropdown:hover .fa-caret-right {
+.dropdown:hover .fa-caret-right{
   transform: rotate(90deg); /* should rotate 90deg*/
 }
-
+  
 /*Scroll bar*/
 ::-webkit-scrollbar {
   width: 10px;
@@ -148,7 +150,7 @@ h3 {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #c29c6d;
+  background-color: #C29c6d;
 }
 ::-webkit-scrollbar-thumb:hover {
   background-color: #8e6f3d;
@@ -166,20 +168,17 @@ h3 {
 }
 
 /*-----------------------------------------------------------------------SDV MAIN AREA---------------------------------------------------------*/
-.container {
-  display: flex;
-  flex-direction: row;
-  gap: 50px;
-  transition: margin-left 0.3 ease;
-  background-color: #b6d7ab;
+.container{
+display: flex;
+flex-direction: row;
+gap: 50px;
+transition: margin-left 0.3 ease;
+background-color: #b6d7ab;
 }
 
 /* Achievement Area */
 /* Container*/
-.ToA,
-.bundles,
-.specitems,
-.bpowers {
+.ToA, .bundles, .specitems, .bpowers {
   background: #d7e4b5;
   border-radius: 8px;
   padding: 15px;
@@ -226,18 +225,17 @@ input#checkboxAch {
   accent-color: #7a6c3d; /*Changes the box colour when ticked. Change it later to a better style */
 }
 /*----------------------------------------------------------------------MINECRAFT--------------------------------------------------------------------------------------------------------*/
-.mccontainer {
+.mccontainer{
   display: flex;
   flex-direction: row;
   transition: margin-left 0.3 ease;
-  background: linear-gradient(#228b22, #c2b280, #2f4f4f);
+  background: linear-gradient(#228B22, #C2B280, #2f4f4f);
   justify-content: space-between;
-}
+  }
 
-.mChecklist,
-.ToAMC {
-  border: solid 4px #6d4c41;
-  background-color: #ff7043;
+.mChecklist, .ToAMC{
+  border: solid 4px #6D4C41;
+  background-color: #FF7043;
   padding: 20px;
   width: 400px;
   height: 1000px;
@@ -247,69 +245,67 @@ input#checkboxAch {
   margin-top: 20px;
 }
 
-.mChecklist li,
-.ToAMC li {
-  background-color: #d32f2f;
-  width: auto;
+.mChecklist li, .ToAMC li{
+  background-color: #D32F2F;
+  width:auto;
   color: white;
   margin-bottom: 10px;
   padding: 20px 20px 20px 20px;
 }
 
-.bestwebsites {
-  height: 800px;
+.bestwebsites{
+height: 800px;
   border: 2px dotted black;
   width: fit-content;
   margin: 20px 0;
   background-color: #0082a7;
 }
 
-.bestwebsites li {
+.bestwebsites li{
   padding: 20px;
   list-style: none;
 }
 /*-----------------------------------------------------------------------LITTLEWOOD------------------------------------------------------------------------------------------------------*/
-.lwcontainer {
+.lwcontainer{
   display: flex;
   flex-direction: row;
   transition: margin-left 0.3s ease;
   background: linear-gradient(#a8d5ba, #e5d7b9);
   justify-content: space-between;
-}
+  }
 
-.ToLW {
-  border: solid 4px #a1887f;
-  border-radius: 8px;
-  background-color: #f6b6a1;
-  padding: 20px;
-  width: 400px;
-  height: 1000px;
-  overflow-x: auto;
-  margin: 20px 150px;
-}
+  .ToLW{
+    border: solid 4px #a1887f;
+    border-radius: 8px;
+    background-color: #f6b6a1;
+    padding: 20px;
+    width: 400px;
+    height: 1000px;
+    overflow-x: auto;
+    margin: 20px 150px ;
+  }
+  
+  .ToLW li{
+    background-color: #f8b6b6;
+    width:auto;
+    color: black;
+    margin-bottom: 10px;
+    padding: 20px 20px 20px 20px;
+  }
 
-.ToLW li {
-  background-color: #f8b6b6;
-  width: auto;
-  color: black;
-  margin-bottom: 10px;
-  padding: 20px 20px 20px 20px;
-}
+  .lwbestwebsites{
+    height: 800px;
+    border: 2px dotted #A1887F;
+    border-radius: 8px;
+    width: 750px;
+    margin: 20px 100px;
+    background-color: #a1c6e7;
+  }
 
-.lwbestwebsites {
-  height: 800px;
-  border: 2px dotted #a1887f;
-  border-radius: 8px;
-  width: 750px;
-  margin: 20px 100px;
-  background-color: #a1c6e7;
-}
-
-.lwbestwebsites li {
-  list-style: none;
-  text-align: center;
-  padding-top: 50px;
-}
+  .lwbestwebsites li{ 
+    list-style: none; 
+    text-align: center;
+    padding-top: 50px;}
 /*----------------------------------------------------------------------FOOTER--------------------------------------------------------------------------------------------------------*/
 
 /* Footer Style*/
@@ -330,131 +326,120 @@ input#checkboxAch {
   font-size: 16px;
   color: #000000;
   text-decoration: none;
+  
 }
 
 /*Soruces::
   Coding Nepal - side bar menu
   W3Schools - side bar menu  */
 
-/*------------------------------------MEDIA CSS---------------------------------------------------------------------*/
+  /*------------------------------------MEDIA CSS---------------------------------------------------------------------*/
 
 /*-Larger Phones-*/
-@media (max-width: 768px) {
-  body {
+@media (max-width: 768px){
+  body{
     font-size: 16px;
+    min-width: 100vh;
+    width: 100%;
   }
 
-  /* Header*/
-  #title {
-    font-size: 40px;
-    padding: 5%;
-  }
-
-  /* navBar*/
-  .navBar {
-    width: 150px;
-  }
-
-  /* Links */
-  .navbar a,
-  .dropdown-btn {
-    font-size: 14px;
-    padding: 5px;
-  }
-
-  /* Container links dropdown*/
-  .dropdown-container a {
-    font-size: 12px;
-  }
-  /*Main Area */
-  .ToA,
-  .bundles,
-  .specitems,
-  .bpowers,
-  .mChecklist,
-  .ToAMC,
-  .ToLW {
-    width: 90%;
-    height: auto;
-    margin: 10px;
-    padding: 15px;
-    word-wrap: break-word;
-  }
-
-  /*Footer */
-  .footer {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 20px;
-    height: 310px;
-  }
+/* Header*/
+#title{
+  font-size: 40px;
+  padding: 5%;
 }
 
-/* Small phone screen*/
-@media (max-width: 600px) {
-  body {
-    font-size: 14px;
-  }
+/* navBar*/
+.navBar{
+  width: 150px;
+}
+
+/* Links */
+.navbar a, .dropdown-btn {
+font-size: 14px;
+padding: 5px;
+}
+
+/* Container links dropdown*/
+.dropdown-container a{
+font-size: 12px;
+}
+/*Main Area */
+.ToA, .bundles, .specitems, .bpowers, .mChecklist, .ToAMC, .ToLW{
+width: 90%;
+height: auto;
+margin: 10px;
+padding: 15px;
+word-wrap: break-word;
+}
+
+/*Footer */
+.footer{
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  height: 310px;
+}
+}
+
+ /* Small phone screen*/
+  @media (max-width: 600px){
+    body{
+      font-size: 14px;
+      min-width: 100vh;
+      width: 100%;
+    }
+  
 
   /* Header*/
-  #title {
+  #title{
     font-size: 40px;
     padding: 5%;
-  }
+    }
 
-  .container,
-  .mccontainer,
-  .lwcontainer {
+  .container, .mccontainer, .lwcontainer {
     flex-direction: column;
-  }
+    width: 100%;
+    box-sizing: border-box;
+    }
 
   /* navBar*/
-  .navBar {
+  .navBar{
     width: 100px;
+    }
+
+/* Links */
+.navbar a, .dropdown-btn {
+  font-size: 14px;
+  padding: 5px;
   }
 
-  /* Links */
-  .navbar a,
-  .dropdown-btn {
-    font-size: 14px;
-    padding: 5px;
+/* Container links dropdown*/
+.dropdown-container a{
+  font-size: 12px;
+  }
+/*Main Area */
+.ToA, .bundles, .specitems, .bpowers, .mChecklist, .ToAMC, .ToLW{
+  width: 100%;
+  height: auto;
+  margin: 5px;
+  margin-left: 80px;
+  padding: 10px;
+  word-wrap: break-word;
   }
 
-  /* Container links dropdown*/
-  .dropdown-container a {
-    font-size: 12px;
+.ach-row, .mc-ach-row, .lwcontainer  {
+  width: 100% ;
   }
-  /*Main Area */
-  .ToA,
-  .bundles,
-  .specitems,
-  .bpowers,
-  .mChecklist,
-  .ToAMC,
-  .ToLW {
-    width: 100%;
-    height: auto;
-    margin: 5px;
-    padding: 10px;
-    word-wrap: break-word;
+/*Footer */
+.footer{
+  flex-direction: row;
+  height: 110px;
+  
   }
 
-  .ach-row,
-  .mc-ach-row,
-  .lwcontainer {
-    width: 70%;
-  }
-  /*Footer */
-  .footer {
-    flex-direction: row;
-    height: 310px;
-  }
-
-  h3,
-  p,
-  ul,
-  li {
-    overflow-wrap: break-word;
+h3, p, ul, li{
+  overflow-wrap: break-word;
   }
 }
