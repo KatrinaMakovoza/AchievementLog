@@ -459,6 +459,10 @@ font-size: 12px;
   gap: 17px; /*Origin gap makes the wrapper extend so becareful amek the gaps small numbers */
   }
 
+  .footer a, .footer p{
+    text-align: justify;
+  }
+
 h3, p, ul, li{
   overflow-wrap: break-word;
   }
