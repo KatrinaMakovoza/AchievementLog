@@ -336,11 +336,13 @@ height: 800px;
   /*------------------------------------MEDIA CSS---------------------------------------------------------------------*/
 
 /*-Larger Phones-*/
-@media (max-width: 768px){
+@media (min-width: 768px) and (max-width: 1024px){
   body{
     font-size: 16px;
-    min-width: 100vh;
-    width: 100%;
+ 
+
+    margin: 0;
+    padding: 0;
   }
 
 /* Header*/
@@ -351,7 +353,7 @@ height: 800px;
 
 /* navBar*/
 .navBar{
-  width: 150px;
+  width: 266px;
 }
 
 /* Links */
@@ -365,13 +367,25 @@ padding: 5px;
 font-size: 12px;
 }
 /*Main Area */
-.ToA, .bundles, .specitems, .bpowers, .mChecklist, .ToAMC, .ToLW{
-width: 90%;
-height: auto;
-margin: 10px;
-padding: 15px;
-word-wrap: break-word;
-}
+.ToA, .bundles, .specitems, .bpowers {
+  width: 100%;
+  height: auto;
+  margin: 5px;
+  padding: 10px;
+  word-wrap: break-word;
+  }
+
+  .mChecklist, .ToAMC, .ToLW {
+    width: 100%;
+    height: auto;
+    margin: 5px;
+    padding: 10px;
+    word-wrap:break-word;
+  }
+
+  .ach-row, .mc-ach-row, .lwcontainer  { 
+    width: 100%;
+    }
 
 /*Footer */
 .footer{
@@ -389,6 +403,7 @@ word-wrap: break-word;
       font-size: 14px;
       min-width: 100vh;
       width: 100%;
+      
     }
   
 
@@ -406,7 +421,7 @@ word-wrap: break-word;
 
   /* navBar*/
   .navBar{
-    width: 100px;
+    width: 135px;
     }
 
 /* Links */
@@ -420,23 +435,39 @@ word-wrap: break-word;
   font-size: 12px;
   }
 /*Main Area */
-.ToA, .bundles, .specitems, .bpowers, .mChecklist, .ToAMC, .ToLW{
+.ToA, .bundles, .specitems, .bpowers {
   width: 100%;
   height: auto;
   margin: 5px;
-  margin-left: 80px;
+  margin-left: 180px;
   padding: 10px;
-  word-wrap: break-word;
+  }
+  .mChecklist, .ToAMC, .ToLW {
+    width: 100%;
+    height: auto;
+    margin: 5px;
+    padding: 10px;
   }
 
-.ach-row, .mc-ach-row, .lwcontainer  {
-  width: 100% ;
+.ach-row, .mc-ach-row, .lwcontainer  { 
+  width: 100%;
   }
 /*Footer */
 .footer{
+  display: flex;
   flex-direction: row;
   height: 110px;
-  
+  position: absolute;
+  align-items: center;
+  text-align: center;
+  gap: 10px
+  }
+
+  .footer a, .footer p{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    width: 100%;
   }
 
 h3, p, ul, li{
